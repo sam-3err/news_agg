@@ -1,6 +1,6 @@
 <?php
 
-$apiKey = "b7ccddd65c65a74235fde56b25f1dc8a";
+$apiKey = "";
 $query=isset($_GET['q']) ? $_GET['q']:'all';
 $url="https://gnews.io/api/v4/search?q=".urlencode($query)."&lang=en&token=".$apiKey;
 $response=file_get_contents($url);
